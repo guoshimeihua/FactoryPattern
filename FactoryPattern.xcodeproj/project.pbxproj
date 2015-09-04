@@ -14,6 +14,11 @@
 		3284F9251B99DAF400A635CA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3284F9241B99DAF400A635CA /* Images.xcassets */; };
 		3284F9281B99DAF400A635CA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3284F9261B99DAF400A635CA /* LaunchScreen.xib */; };
 		3284F9341B99DAF400A635CA /* FactoryPatternTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3284F9331B99DAF400A635CA /* FactoryPatternTests.m */; };
+		3284F9451B99DDCB00A635CA /* AddCalculate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3284F9441B99DDCB00A635CA /* AddCalculate.m */; };
+		3284F9481B99DDFE00A635CA /* MultiplyCalculate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3284F9471B99DDFE00A635CA /* MultiplyCalculate.m */; };
+		3284F94B1B99DF7B00A635CA /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3284F94A1B99DF7B00A635CA /* Factory.m */; };
+		3284F94E1B99DFF300A635CA /* AddFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3284F94D1B99DFF300A635CA /* AddFactory.m */; };
+		3284F9511B99E00300A635CA /* MultiplyFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3284F9501B99E00300A635CA /* MultiplyFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,17 @@
 		3284F92D1B99DAF400A635CA /* FactoryPatternTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactoryPatternTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3284F9321B99DAF400A635CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3284F9331B99DAF400A635CA /* FactoryPatternTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactoryPatternTests.m; sourceTree = "<group>"; };
+		3284F9421B99DD7200A635CA /* Calculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculate.h; sourceTree = "<group>"; };
+		3284F9431B99DDCB00A635CA /* AddCalculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCalculate.h; sourceTree = "<group>"; };
+		3284F9441B99DDCB00A635CA /* AddCalculate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCalculate.m; sourceTree = "<group>"; };
+		3284F9461B99DDFE00A635CA /* MultiplyCalculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiplyCalculate.h; sourceTree = "<group>"; };
+		3284F9471B99DDFE00A635CA /* MultiplyCalculate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiplyCalculate.m; sourceTree = "<group>"; };
+		3284F9491B99DF7B00A635CA /* Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Factory.h; sourceTree = "<group>"; };
+		3284F94A1B99DF7B00A635CA /* Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Factory.m; sourceTree = "<group>"; };
+		3284F94C1B99DFF300A635CA /* AddFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFactory.h; sourceTree = "<group>"; };
+		3284F94D1B99DFF300A635CA /* AddFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFactory.m; sourceTree = "<group>"; };
+		3284F94F1B99E00300A635CA /* MultiplyFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiplyFactory.h; sourceTree = "<group>"; };
+		3284F9501B99E00300A635CA /* MultiplyFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiplyFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +97,7 @@
 		3284F9161B99DAF300A635CA /* FactoryPattern */ = {
 			isa = PBXGroup;
 			children = (
+				3284F93D1B99DAFB00A635CA /* Factory */,
 				3284F91B1B99DAF400A635CA /* AppDelegate.h */,
 				3284F91C1B99DAF400A635CA /* AppDelegate.m */,
 				3284F91E1B99DAF400A635CA /* ViewController.h */,
@@ -117,6 +134,24 @@
 				3284F9321B99DAF400A635CA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3284F93D1B99DAFB00A635CA /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				3284F9421B99DD7200A635CA /* Calculate.h */,
+				3284F9431B99DDCB00A635CA /* AddCalculate.h */,
+				3284F9441B99DDCB00A635CA /* AddCalculate.m */,
+				3284F9461B99DDFE00A635CA /* MultiplyCalculate.h */,
+				3284F9471B99DDFE00A635CA /* MultiplyCalculate.m */,
+				3284F9491B99DF7B00A635CA /* Factory.h */,
+				3284F94A1B99DF7B00A635CA /* Factory.m */,
+				3284F94C1B99DFF300A635CA /* AddFactory.h */,
+				3284F94D1B99DFF300A635CA /* AddFactory.m */,
+				3284F94F1B99E00300A635CA /* MultiplyFactory.h */,
+				3284F9501B99E00300A635CA /* MultiplyFactory.m */,
+			);
+			name = Factory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +254,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3284F9451B99DDCB00A635CA /* AddCalculate.m in Sources */,
 				3284F9201B99DAF400A635CA /* ViewController.m in Sources */,
 				3284F91D1B99DAF400A635CA /* AppDelegate.m in Sources */,
 				3284F91A1B99DAF400A635CA /* main.m in Sources */,
+				3284F9511B99E00300A635CA /* MultiplyFactory.m in Sources */,
+				3284F94B1B99DF7B00A635CA /* Factory.m in Sources */,
+				3284F9481B99DDFE00A635CA /* MultiplyCalculate.m in Sources */,
+				3284F94E1B99DFF300A635CA /* AddFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

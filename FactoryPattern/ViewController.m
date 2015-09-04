@@ -7,7 +7,12 @@
 //
 
 #import "ViewController.h"
-
+#import "Calculate.h"
+#import "AddCalculate.h"
+#import "MultiplyCalculate.h"
+#import "Factory.h"
+#import "AddFactory.h"
+#import "MultiplyFactory.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +21,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    Factory *factory = [[AddFactory alloc] init];
+    Factory *calculate = [factory createFactory];
+    calculate.numberA = 10.0;
+    calculate.numberB = 20.0;
+    
+    float sum =  [calculate calculate];
+    NSLog(@"sum is = %f", sum);
+    
+    Factory *factory1 = [[MultiplyFactory alloc] init];
+    Factory *calculate1 = [factory1 createFactory];
+    calculate1.numberA = 10.0;
+    calculate1.numberB = 20.0;
+    
+    float multiply =  [calculate1 calculate];
+    NSLog(@"sum is = %f", multiply);
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
